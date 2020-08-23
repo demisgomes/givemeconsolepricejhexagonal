@@ -1,12 +1,12 @@
 package com.demisgomes.givemeconsolepricejhexagonal.adapters.web;
 
-import com.demisgomes.givemeconsolepricejhexagonal.application.model.ConsolePriceCalculateRequest;
-import com.demisgomes.givemeconsolepricejhexagonal.application.model.ConsolePriceRegisterRequest;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.in.CalculateConsolePriceUseCase;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.in.LoadConsolePriceUseCase;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.in.RegisterConsolePriceUseCase;
-import com.demisgomes.givemeconsolepricejhexagonal.application.usecase.exception.ConsolePriceNotFoundException;
-import com.demisgomes.givemeconsolepricejhexagonal.domain.models.ConsolePrice;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.models.ConsolePriceCalculateRequest;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.models.ConsolePriceRegisterRequest;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.in.CalculateConsolePriceUseCase;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.in.LoadConsolePriceUseCase;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.in.RegisterConsolePriceUseCase;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.exception.ConsolePriceNotFoundException;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.models.ConsolePrice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

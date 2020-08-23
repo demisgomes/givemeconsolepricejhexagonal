@@ -1,23 +1,19 @@
-package com.demisgomes.givemeconsolepricejhexagonal.application.usecase;
+package com.demisgomes.givemeconsolepricejhexagonal.core.usecase;
 
-import com.demisgomes.givemeconsolepricejhexagonal.application.model.ConsolePriceRegisterRequest;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.in.RegisterConsolePriceUseCase;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.out.FetchExchangeRatePort;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.out.FetchTaxPercentagePort;
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.out.SaveConsolePricePort;
-import com.demisgomes.givemeconsolepricejhexagonal.domain.behavior.ConsolePriceCalculator;
-import com.demisgomes.givemeconsolepricejhexagonal.domain.models.ConsolePrice;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.models.ConsolePriceRegisterRequest;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.in.RegisterConsolePriceUseCase;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.out.FetchExchangeRatePort;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.out.FetchTaxPercentagePort;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.out.SaveConsolePricePort;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.behavior.ConsolePriceCalculator;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.models.ConsolePrice;
 
-@Service
 public class RegisterConsolePrice implements RegisterConsolePriceUseCase {
     private ConsolePriceCalculator consolePriceCalculator;
     private FetchExchangeRatePort fetchExchangeRatePort;
     private FetchTaxPercentagePort fetchTaxPercentagePort;
     private SaveConsolePricePort saveConsolePricePort;
 
-    @Autowired
     public RegisterConsolePrice(ConsolePriceCalculator consolePriceCalculator, FetchExchangeRatePort fetchExchangeRatePort, FetchTaxPercentagePort fetchTaxPercentagePort, SaveConsolePricePort saveConsolePricePort) {
         this.consolePriceCalculator = consolePriceCalculator;
         this.fetchExchangeRatePort = fetchExchangeRatePort;

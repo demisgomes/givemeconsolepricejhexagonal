@@ -1,6 +1,6 @@
 package com.demisgomes.givemeconsolepricejhexagonal.adapters.integration;
 
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.out.FetchTaxPercentagePort;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.out.FetchTaxPercentagePort;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,6 +1,6 @@
 package com.demisgomes.givemeconsolepricejhexagonal.adapters.integration;
 
-import com.demisgomes.givemeconsolepricejhexagonal.application.port.out.FetchExchangeRatePort;
+import com.demisgomes.givemeconsolepricejhexagonal.core.port.out.FetchExchangeRatePort;
 import org.springframework.stereotype.Service;
 
 @Service

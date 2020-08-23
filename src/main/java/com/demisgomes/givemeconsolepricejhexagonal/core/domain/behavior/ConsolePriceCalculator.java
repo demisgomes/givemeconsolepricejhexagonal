@@ -1,6 +1,6 @@
-package com.demisgomes.givemeconsolepricejhexagonal.domain.behavior;
+package com.demisgomes.givemeconsolepricejhexagonal.core.domain.behavior;
 
-import com.demisgomes.givemeconsolepricejhexagonal.domain.models.ConsolePrice;
+import com.demisgomes.givemeconsolepricejhexagonal.core.domain.models.ConsolePrice;
 
 public class ConsolePriceCalculator{
     public ConsolePrice calculateFromProfit(String consoleName, double priceInUSD, double profitPercentage,

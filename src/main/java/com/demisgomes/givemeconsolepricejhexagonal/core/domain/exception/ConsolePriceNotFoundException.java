@@ -1,4 +1,4 @@
-package com.demisgomes.givemeconsolepricejhexagonal.application.usecase.exception;
+package com.demisgomes.givemeconsolepricejhexagonal.core.domain.exception;
 
 import java.lang.RuntimeException;
 

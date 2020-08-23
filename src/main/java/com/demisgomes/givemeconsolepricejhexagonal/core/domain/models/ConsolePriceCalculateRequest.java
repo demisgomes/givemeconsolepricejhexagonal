@@ -1,4 +1,4 @@
-package com.demisgomes.givemeconsolepricejhexagonal.application.model;
+package com.demisgomes.givemeconsolepricejhexagonal.core.domain.models;
 
 public class ConsolePriceCalculateRequest {
     private String consoleName;

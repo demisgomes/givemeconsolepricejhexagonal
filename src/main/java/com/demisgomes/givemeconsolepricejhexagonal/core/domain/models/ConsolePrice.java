@@ -1,4 +1,4 @@
-package com.demisgomes.givemeconsolepricejhexagonal.domain.models;
+package com.demisgomes.givemeconsolepricejhexagonal.core.domain.models;
 
 public class ConsolePrice{
     private Integer id;
